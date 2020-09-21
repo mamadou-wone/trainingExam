@@ -1,0 +1,443 @@
+/*----------------------------MISE EN FORME DU FOOTER----------------------------------------------------------------------------------*/
+
+.main {
+    max-height: 550px;
+    background-color: #191919;
+    color: white;
+    font-size: 38pt;
+    text-align: center;
+    line-height: 550px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: #191919;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #5383d3;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}
+
+
+/*---------------------------------------CONTACT & FORMULAIRE-----------------------------------------------------------*/
+
+form {
+    width: 20%;
+    padding: 40px;
+    position: relative;
+    top: 60%;
+    left: 60%;
+    transform: translate(10%, 10%);
+    background: #191919;
+    text-align: center;
+}
+
+form h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+form h5 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    width: 270px;
+    border-color: #2ecc71;
+}
+
+form input[type="password"]:focus,
+form input[type="date"]:focus {
+    width: 240px;
+    border-color: #2ecc71;
+}
+
+form textarea {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+form button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#submit {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+form input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+form input[type="date"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+
+/*----------------------------MISE EN FORME DU MENU----------------------------------------------------------------------------------*/
+
+body {
+    font-family: serif;
+    padding: 0px;
+    margin: 0px;
+    background: url('p404.png'), #151729;
+}
+
+.nav {
+    width: 100%;
+    background-color: #191919;
+    display: inline-block;
+}
+
+.nav>ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav>.boss::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+.nav>ul>li>a {
+    padding: 20px 30px;
+    color: #FFF;
+}
+
+.nav>ul>li:hover a {
+    padding: 20px 30px;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu-1:hover {
+    border-top: 5px solid #41484d;
+    background-color: darkslategray;
+}
+
+.menu-2:hover {
+    border-top: 5px solid #41484d;
+    background-color: darkslategray;
+}
+
+.menu-3:hover {
+    border-top: 5px solid #41484d;
+    background-color: darkslategray;
+}
+
+.menu-4:hover {
+    border-top: 5px solid #41484d;
+    background-color: darkslategray;
+}
+
+
+/*-----------------------------------MISE EN FORME DU LOGIN---------------------------------------------------------*/
+
+.box {
+    /* border: solid gray 1px;*/
+    /*margin: 100px auto;*/
+    width: 20%;
+    padding: 40px;
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transform: translate(10%, 10%);
+    background: #191919;
+    text-align: center;
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+
+/*----------------------------------------------------Button de L'admin---------------------------------------------*/

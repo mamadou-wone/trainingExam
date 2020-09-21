@@ -1,0 +1,118 @@
+#allmembre2 {
+    background-color: #632432;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('boss.jpg'), #151729;
+}
+
+#container {
+    margin: 150px auto;
+    width: 600px;
+    scroll-behavior: smooth;
+}
+
+table {
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+thead {
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover {
+    background-color: #369681;
+    color: white;
+}
+
+#suppression {
+    width: 20%;
+    padding: 40px;
+    position: relative;
+    transform: translate(10%, 10%);
+    background: #191919;
+    text-align: center;
+}
+
+#allmembre {
+    width: 20%;
+    padding: 30px;
+    position: relative;
+    background: #191919;
+    text-align: center;
+}
+
+form input[type="number"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+form input[type="text"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+form input[type="number"]:focus {
+    width: 200px;
+    border-color: #2ecc71;
+}
+
+#submit {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+form h1 {
+    color: white;
+    text-transform: none;
+    font-weight: 150;
+}
+
+#allmembre h1 {
+    color: white;
+    text-transform: none;
+    font-weight: 50;
+}
